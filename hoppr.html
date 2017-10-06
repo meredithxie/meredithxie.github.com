@@ -18,11 +18,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Arvo:400,400i|Roboto:400,500,700" rel="stylesheet">
 
-
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
-
 
     <link href="css/styles.css" rel="stylesheet">
 
@@ -30,10 +27,7 @@
 
     <link rel="icon" type="image/png" href="img/favicon.png" />
 
-
-
     <script src="jquery.js" type="text/javascript"></script> <script src="jquery.lazyload.js" type="text/javascript"></script>
-
 
   </head>
 
@@ -113,15 +107,6 @@ $(document).ready(function() {
     <!-- Page Content -->
     <div class="container-fluid">
 
-
-
-
-
-
-
-
-
-
         <div class = "onesection" >
           <div class="style fade-in">
           
@@ -136,7 +121,6 @@ $(document).ready(function() {
               
             </div>
             
-           
             <img src="img/1.26.png" class="img-fluid" alt="Responsive image" >
            
           </div>
@@ -149,127 +133,166 @@ $(document).ready(function() {
           <div class="container">
             <div class="row">
               <div class="col-lg-8 col-md-10 mx-auto">
-                <p>This project is a class project for intro to user centered design.</p> 
-                <p>Prompt: Young adults travel to places often on limited budget. They seek ways to cut the spending on accommodations, saving money to spend on food, sightseeing and such. However, safe and convenient accommodations, like some Airbnb and hotels, are not affordable, and cheap accommodations, such as CouchSurfing, are not safe. If staying with friends for free, people don’t always have friends in the cities they want to go to. Design goal here is to solve this problem by using technology.</p>
+                <p>So the first project I would like to walk you through is a class project for Human Centered Design. The product is called Hoppr. It is a mobile app designed for college students to find free and trustworthy accommodations while traveling alone. You probably noticed some keywords here, such as free, trustworthy, alone, etc. I will explain later how I came up with the statement like that. </p>
 
-                <p>Target Users, which is college student, is decided by the prompt.</p>
-
-                <img src="img/hoppr/2.png" class="img-fluid" alt="Responsive image" >
-               
+                 <img src="img/hoppr/hoppr_img/1.png" class="img-fluid" alt="Responsive image" >
+                 <div class="footnote">Figure 1, overall screenshots</div>
                 
+                <p>Ok, so some background information I want to share. It is a group-based 10-week-long class project, and I was the designer on the team. I also participated quite a bit as a researcher when conducting user research and usability testing.</p>
 
+                <p>The target user of the project is predefined: college student. In other words, no matter what product my team ended up designing, it need to serve college students. Also, since it is a rather broad scope, the whole class went through a raffle to pick a topic to focus on, and my team picked travel. Our prompt, before start on anything, is we need to apply technology and user centered design to ease or improve college student’s travel experience.</p>
 
-                <p>In ideation studios, we ideated on many solutions and explored them all, and decided to go with mutual friends network through Facebook: users login into Hoppr using Facebook, and Hoppr finds user’s friends and the friends of the user’s friends. Users find friend (or friend’s friend) in town, stay with the friend and pay virtual currency: travel coins. Based on a statistic supplied by Facebook, the median number of friends that a user has on Facebook is 200, so if every of your 200 Facebook friends has 200 friends, that could be as many as 40,000 people and just as many connections.</p>
-
+                <img src="img/hoppr/hoppr_img/2.png" class="img-fluid" alt="Responsive image" >
+                 <div class="footnote">Figure 2, background information</div>
                 
-
-                
+                <p>This is roughly the design process I went through. In the next probably 20 minutes, I will walk you through what problem was I solving, how did I know it is a real problem, the process of ideating and validating solutions. I will also have an interactive prototype in the end, to walk through the major user flow. </p>
+                <p><br></p>
+                <img src="img/hoppr/hoppr_img/3.png" class="img-fluid" alt="Responsive image" >
+                 <div class="footnote">Figure 3, design process</div>
+                 
                 <h3 class="section-heading">Research process</h3>
 
-                <p>Based on the current situation, we decided to started by conducting competitive analysis. We identify the gap among current market choices, and we need to design Hoppr to fulfil this gap.</p>
-                 <img src="img/hoppr/3.png" class="img-fluid" alt="Responsive image" >
-                 <div class="footnote">Competitive Analysis</div>
-                 <p>Also, even though we do understand the users, I still created the survey online and sent out on social media to gather more information about users. In the end, I received 18 responses from target users. Result is down below. </p>
-               
+                <p>When it comes down to things you might run into in travel, there are many things and aspects that are involved, there is transportation, there is food, accommodation, and maybe language translation if necessary. So, among all these aspects and problems that are involved in college students’ travel experience, which problem should I solve? Which problem that brings great value to our users and is, indeed, a real problem?</p>
 
-               
-                 <img src="img/hoppr/4.png" class="img-fluid" alt="Responsive image" >
-                <div class="footnote">Survey Result</div>
-                
+                <p>Me and my team brainstormed on what causes pain in travel for college students, and in the same time, we ran surveys and interviews to our target users to gain more user insights about their travel experience. I drafted questions on Google forms initially, focusing on the pain that people experienced before. Within the first week, we received our first 29 survey result. </p>
+
+
+                <img src="img/hoppr/hoppr_img/4.png" class="img-fluid" alt="Responsive image" >
+                <div class="footnote">Figure 4, ideation studio</div>
               
-                <p>As we can see, the survey result shows the design solution is considered viable by my target users. So I followed up to people who answered “depends” and interviewed them for further clarified answer. After interviewing 6 target users, we figured out that users have numerous preferences, such as gender of the host, proximity to public transportation, etc. In the end, we decided to incorporate users' preferences we found during interviews into our filter feature.</p>
+                
+                <p>Among the survey results we received, the most frequent word that showed up was money, or budget. The word showed up about 20 times in just 29 survey results. Also, Users especially talk frequently about money when it comes to “hotel” and “traveling without family”. </p>
 
-                <h3 class="section-heading">Persona</h3>
-                <p>
-                  After conducting the user research, I analyzed the responses we collected and grouped what the participants had in common, such as pain points and similar preferences, and some of the important differences between the individuals. I used the results of the research and interviewees’ personal experiences to create the personas. The point of making this persona is for communication.
+                <p>56 interviews in total within one week. We have four members in our team. Within that one week of intensive interviewing and receiving and analysing results, we met up everyday, talking about the results we got that day, and we can improve our questions we ask users the next day. Through this process, we found 2 very interesting things:
+
+                  <ul>
+                    <li>Money is an issue when travelling alone. When travelling with parents, they don’t care. </li>
+                    <li>Our users are ok with spending money on sightseeing or tickets to parks and resorts, but not on accommodation.</li>
+                  </ul>
                 </p>
-                 <img src="img/hoppr/5.png" class="img-fluid" alt="Responsive image" >
-                <div class="footnote">Persona</div>
-                
+                <p>Here are some quotes from our interview:</p>
 
-                <h3 class="section-heading">Scenarios & Storyboards</h3>
+                <img src="img/hoppr/hoppr_img/5.png" class="img-fluid" alt="Responsive image" >
+                 <div class="footnote">Figure 5, direct quote</div>
+
+                <p>
+                  Now we know that money spending on accommodation is one problem users concern themselves with. However, why users concern about it then? Apparently, the current market choices does not satisfy users. There is a gap somewhere. So, besides user research, another important part of my research process is competitive analysis. Let’s find out what the gap is.
+                </p>
+                <p>In interviews, I noticed that a lot of users talking about hotel and Airbnb, with also 3 people mentioning a product called CouchSurfing. These are the main current options for users. Along with the survey and interview results we gathered so far, I identified that our competing products are: Airbnb, Hotel and CouchSurfing. If you are not familiar with CouchSurfing, it is a platform for members to stay as a guest at someone's home. CouchSurfing was mentioned several times by some users we interviewed, but interesting thing is, they all said “yeah, I know what it is. I just have never used it before.”</p>
+
+                <img src="img/hoppr/hoppr_img/6.png" class="img-fluid" alt="Responsive image" >
+                <div class="footnote">Figure 1, Transition diagram</div>
+
+
+                <p>Here is a key problem: why people choose not to use CouchSurfing? So I continued online research and read people’s review of this product, and I interviewed another 3 college students who used this product before.</p>
+
+                <p>The answer, I found, is trust. Here is another direct quote from users “I have heard of CouchSurfing several times, but everytime before I was just about to use it, I feel insecure because who knows whose home I will ended up spending the night? What if the host is a criminal or rapist?”.</p>
+
+                <p>With both qualitative and quantitative data we got so far, here is a diagram, the left bottom corner of this slide, of the result of competitive analysis. As we can see, from the three key factors users value the most, safe, price and trust, there is no single product that can bringing it all. AND THAT, is how me and my team finalized on our people problem statement</p>
+
+                <h3 class="section-heading">What people problem are we solving?</h3>
               
-                <p>The scenarios are a look behind our design; they grow from the personas and the research and influence the rest of the project. I developed scenarios that fit different types of users to help us think more thoroughly about the features we wanted to include.</p>
+                <p> Ok some important things to address before I move on: How do we know this is a real problem and why is it important to solve? Again, from user research. In interviews, there are scenarios come up rather frequently. How will we know if we’ve solved the problem? Even though it is just a class project, even though I cannot actually launch the product, I think I will set the metrics to be retention rate right now: People who used my product received value from it, that they use Hoppr and then love it enough to come back. </p>
 
-               
-                <img src="img/hoppr/6.png" class="img-fluid" alt="Responsive image" >
-                <div class="footnote">Storyboard</div>
-               
+                <img src="img/hoppr/hoppr_img/7.png" class="img-fluid" alt="Responsive image" >
+                <div class="footnote">Figure 7, problem statement</div>
+                
+                <h3 class="section-heading">Ideation studios</h3>
+                <p>Now we have enough context, it’s time to dive into design.</p>
 
-                <h3 class="section-heading">Sitemap</h3>
-                <p>We built the sitemap from scratch, and we went through several design iterations to finalize it. This sitemap went through several iterations based on multiples rounds of evaluation of paper prototypes, low fidelity prototypes, instructor's comments, and a lot of peer reviews. See below for our final sitemap.</p>
+                <p>The first step I took here is ideation. I watched a Facebook conference on design before, and I really liked the quote “great design comes from brute force”. In this process, me and my team focused on ideating on the related topics. The major ones are how do we make accommodation free for college students and how do we build trust between strangers (host/guest relationship)? </p>
+                
+                <img src="img/hoppr/hoppr_img/8.png" class="img-fluid" alt="Responsive image" >
+                <div class="footnote">Figure 8, ideating process</div>
+               
+                <p>So in our ideation studio, we had a lot of post-its covering the whiteboard. I decided not to show you the picture of that, because I am sure you have seen those kind of pictures really frequently, and you can barely see anything clearly on those pictures. Basically, me and my team went a bit crazy on the topic how do we build trust among guest and host who are totally strangers. The first several ideas were rather obvious, such as holding deposits, or gathering critical information such as government issued ID from both sides, AND, some crazy ideas were also generated when we hit the 30th or 50th idea, such as if one person behaved bad while staying with others, his or her nude picture, that was taken before for registering for our product, will be posted on social media.</p>
+
+                <p>Of course we cannot go with those wild ones. However, there was one idea that was generated in later session of ideation, that we call mutual friends. So what it is is that users log into our product Hoppr using their Facebook account, and Hoppr catch their friends connections and location data so Hoppr can recommend possible places to stay while traveling alone, based on whether the two person have mutual friends on Facebook or not.
+                </p>
+
+                <img src="img/hoppr/hoppr_img/9.png" class="img-fluid" alt="Responsive image" >
+                <div class="footnote">Figure 9, ideating and validating potential solutions</div>
+
+                <p> Me and my team each picked our favorite. In the end, there were two ideas that was left that we think worth moving forward. One is holding deposit, the other is mutual friends. At this point, me and my teammates kinda had conflicts on which one we should move on with. I was leaning towards the mutual friend idea, and one of my teammate wanted to move on the deposit idea.</p>
+
+                <p>What did we do to decide on which one to choose?</p>
+
+                <p>We did a little test on users. The first test we did was that I mocked up 2 versions of quick and rather low fidelity design, one adapted the deposit idea, one adapted mutual friends idea, and me and my teammate tested both of them out on users in our design studio.
+                </p>
+
+                <img src="img/hoppr/hoppr_img/10.png" class="img-fluid" alt="Responsive image" >
+                 <div class="footnote">Figure 10, ideating and validating potential solutions</div>
+
+                <p>The group of people who tested on the mutual friends version of idea responded a lot more positive with the product. To directly quote users, one person who used mutual friends mockups said: “Yeah I like the idea getting to know my friend’s friend. I feel with my friend who I can trust in between introducing us, I feel I am making a new friend.” </p>
+
+                <p>The other research I did to validate on the idea was to send a survey targeted to people and gauge whether they think of the mutual friends idea. Very surprisingly, the survey result came back very positive. Out of 18 survey result we received at this point, nobody answered “no” to the mutual friends idea. Of course I followed up in interviews about detailed responses. I especially invited the teammate who preferred the deposit idea to come along with me to interview sessions, and the result of our interviews with users were really good, so my teammate agreed on to move forward the mutual friends idea. </p>
+
+                <p>In the next ideation studio, we brainstormed the features that our product should have. This process involve with a lot of post-its, and eventually, formed this sitemap.</p>
+                
                 <img src="img/hoppr/sitemap.png" class="img-fluid" alt="Responsive image" >
-                <div class="footnote">Sitemap</div>
+                <div class="footnote">Figure 11, sitemap</div>
 
-
-               
-                <h3 class="section-heading">Paper prototype & testing</h3>
-
-                <p>After I had collected sufficient data from our user research methods and planned out our information architecture, the next step in our process was to transform that data into visible, tangible screens and results. This began with literally very sketchy ideas about what the UI should look like and how our users would be able to interact with Hoppr.</p>
-
+                <h3 class="section-heading">Testing and iteration</h3>
                 
-                <img src="img/hoppr/9.jpg" class="img-fluid" alt="Responsive image" >
-                <div class="footnote">Figure 8, Paper prototype of accommodation description</div>
-                <p>Example findings: certain functions are missing when users try to adjust their actions. Categorization in context caused confusion. Placement of some elements problematize the Information Architecture.</p>
-                <h3 class="section-heading">Transition diagram & Annotated wireframe</h3>
-
-                <p>Before starting working on the annotated wireframes, I analyzed the results collected from the previous usability evaluation of the effectiveness of the paper prototype. I adjusted the the information architecture and the interface based on the findings and some other suggestions from the participants, when creating wireframes based on our paper prototype. The file attached is the wireframe of the full system with annotation on each element. The annotations are to present our design rationales or purpose of the decisions.</p>
-                <img src="img/hoppr/10.png" class="img-fluid" alt="Responsive image" >
-                <div class="footnote">Figure 9, Transition diagram</div>
               
-              
+                <p>One of the major part of this design process is to test things out. I started on paper prototype and low fidelity mockups, mainly to see how the interaction should be like, then moved on to high fidelity in the end. Along the way, there were many changes been made based on the feedback I got from people and other designer on my team. Here I will talk about some tasks I designed and tested and how the iteration helped the design.</p>
 
-                <p>After creating the wireframe of the full system, I used the wireframes to rebuild the information architecture in a form of state transition diagram. This diagram mainly illustrated the key path scenario of the system. The hierarchy was indicated by the depth of the color of arrows. It helped to organize and better demonstrate the structure of the wireframes.</p>
+                <img src="img/hoppr/hoppr_img/11.png" class="img-fluid" alt="Responsive image" >
+                 <div class="footnote">Figure 12, testing and iteration</div>
+
+                <p>In both paper prototype and low fidelity mockups, there were 2 tasks to test out: They were setting date, location, and choose an accommodation. The other is to browse through an accommodation and successfully ask for reference and book.<p>
+
+                <p>I found some interaction issues along the testings, for example: interaction: date selection: at first I designed users setting date by drop down menu, but users responded as the interaction wasn’t quite smooth. So I tried several other interaction options, such as tap on a calendar, and scrolling to set a date. Eventually I moved forward the tap on calendar to set a date interaction and improved the interaction later on.</p>
 
                
-                <img src="img/hoppr/11.png" class="img-fluid" alt="Responsive image" >
-                
+                <img src="img/hoppr/hoppr_img/12.png" class="img-fluid" alt="Responsive image" >
+                 <div class="footnote">Figure 13, testing iterating process</div>
+                <p>Another big one I caught during this session was the button “contact host” location. Initially I had the “request booking” and “contacting host” on the very bottom of the room description page. However, I realized users sometimes simply trying to book the room without scrolling all the way down to the bottom of the page, so I added two extra “request booking” and “contact host” on the top of the page.</p>
                
-                <img src="img/hoppr/12.png" class="img-fluid" alt="Responsive image" >
-                <div class="footnote">Figure 10, annotated wireframes</div>
+                <img src="img/hoppr/hoppr_img/13.png" class="img-fluid" alt="Responsive image" >
+                 <div class="footnote">Figure 14, testing iterating process</div>
 
-                <h3 class="section-heading">High fidelity prototype</h3>
+                 <p>So during one of the usability testing, one user said that “yeah, I really like the idea of this app. You know, if this app exist for real, I would probably use it every weekend just to travel and stay with others and probably never play the role of being a host.”</p>
 
-                <img src="img/hoppr/2.6.png" class="img-fluid" alt="Responsive image" >
+                  <p>You see one problem here? This is a big constraint of all class projects -- we can’t launch the app and gather real world feedback quickly enough to iteration, and it leads to result like this one: I missed that people get benefits by staying with others for free, but for people who play the role of hosts, what do they get? Nothing!</p>
 
-                <p>​From the wireframes, creating the high-fidelity mock-up wasn’t simply a matter of adding images and color; the structure of several of the screens was adjusted to account for critiques from our peers and another pass over with the personas.</p>
-                <img src="img/hoppr/14.png" class="img-fluid" alt="Responsive image" >
-                <p>As reaching the end of the quarter, I still have elements of our project that I don’t have answers to. I had originally conceived of Hoppr utilizing a virtual currency to incentivize hosting, because the virtual currency system balance the number of users for being host and residents. However, as the project moving forward, I found that this would limit users who don’t have that option to host (such as people who live in Frat or Sorority house). Additionally, risk management is an important element, but because we don’t use real money on Hoppr, the most we currently would be able to provide is advice and resources to deal with situations. Solving these issues would require more research and testing.</p>
+                  <p>Obviously they make friends with their mutual friends, but based on the conversation I had with people who tested out the prototypes for me, ohhh yeah they are not very interested in the idea of being hosts comparing to how much they are interested being the guests. If too many people being guests, and not enough people hosting, obviously it breaks the system I designed.</p>
+                  <img src="img/hoppr/hoppr_img/14.png" class="img-fluid" alt="Responsive image" >
+                 <div class="footnote">Figure 15, one problem caught to solve</div>
+                  <p>So, problem to solve: how do we make sure that there are enough people hosting? To be totally honest, by the time I realized this problem, it was already week 8. What that means to me was that, omg I am about to present the design in front of my professors and the whole class, AND several senior designers from Amazon, Artefacts and other tech companies in Seattle who will probably show up later in my career fair. </p>
+
+                  <p>What am I gonna do? Time is ticking. So, me and my teammates went in our design lab and did ideation studio again, around the problem “how do we make sure there are enough people hosting in Hoppr”. Again, many ideas were generated, such as hosts are awarded with money, or best hosts ranking, etc. One idea we ended up agree on and moved forward with was: virtual currency, or what we call, travel coins. What that means, is that users have certain balance of virtual currency when they sign up. Every time they stay with others, they pay travel coins to hosts. In order to continue have travel coins to spend, people need to host to earn it.</p>
+
+                  <p>This way, everyone who uses Hoppr are both guest and host. Me and my team decided to move forward with it, and I do think there are maybe some constraints about this idea too, but we were running out of time and did not have the resources to launch the app to see the data whether virtual currency is really a great idea like I think it is. We simply just had to move along considering the hard deadline. Ok moving on. </p>
+
+                <h3 class="section-heading">High fidelity mockups</h3>
+
                 
+
+                <p>​Ok last part, visual craft to high fidelity mockups. Continuing on iteration and testings, a lot of research on color study, tried out different color choices, and finally the product you are looking at right now. If you click on the interface, it takes you to an interactive prototype. I can walk you through the major user journey here if you want. </p>
+                <img src="img/hoppr/hoppr_img/15.png" class="img-fluid" alt="Responsive image" >
+                 <div class="footnote">Figure 16, high fidelity mockups</div>
+
+                 <h3 class="section-heading">What I learned and future direction</h3>
+                <p>So some future directions and several things I learned throughout the process: if I have more time and actually have the chance to launch Hoppr, I will want to see the data of how many people sign up, use it, actually going on a trip using Hoppr, and coming back to Hoppr after using it on a trip. I want to see users giving me reviews, and learn from what I can keep doing to make this product better.</p>
+
+                <img src="img/hoppr/hoppr_img/16.png" class="img-fluid" alt="Responsive image" >
+                 <div class="footnote">Figure 17, reflection, future directions and brief result</div>
+
+                <p>I learned a lot from this process, and the most most important one is, documenting well! What I mean is that each user research session, documenting well when, where and who was involved in the interview, survey, organizing all of them well in the team drive, so my team member wouldn’t have a hard time navigating to the doc they want to find. Also, documenting well on each of the usability testing, what went well, what did not, and make sure that my team members can easily understand what I did so they don’t waste time testing out the same features.</p> 
+                <p>Also, one result: at the end of the final presentation in front of class, professors and designers from Amazon, Artefect etc, my team won the best product design award in the class! The capstone professor recommended us to continue work on this project in our Capstone, which is a 6 month long senior graduate design project, if possible. </p>
               </div>
             </div>
-
-
-            
-
           </div>
-
-
-
         </article>
-
-
-
-
-       
-
-
-
-
       </div>
-
       <p><br></p>
-
-
     <footer class="footer">
       <div id="effects" class="effects">
          <div class="row">
-
             <div class="col-lg-6" style = "padding-left:0;padding-right:0;">
               <a href="marketingwebsite.html" class="hvr-sweep-to-left"><p class="footer-hoppr-backward"style = "margin:0; ">Going back to</p>
-
                <p class="footer-hoppr-title"style = "margin:0;">Marketing Website</p>
-
              </a>
             </div>
             <div class="col-lg-6" style = "padding-left:0;padding-right:0;">
@@ -277,37 +300,18 @@ $(document).ready(function() {
               <p class="footer-hoppr-title"style = "margin:0;">
                 HuskyJobs</p></a>
             </div>
-
         </div>
     </div>
   </footer>
-
-
-
-
-
-
-
-
     <!-- Bootstrap core JavaScript -->
-
-
-
-
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery/jquery.easing.min.js"></script>
     <script src="vendor/jquery/scrollreveal.min.js"></script>
     <script src="vendor/jquery/jquery.magnific-popup.min.js"></script>
-
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
-
-
     <script src="vendor/jquery/jquery.min.js"></script>
-
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
   </body>
-
 </html>
