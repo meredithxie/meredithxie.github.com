@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Meredith Yuhan Xie, UX | Product Designer</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400,400i|Roboto:400,500,700" rel="stylesheet">
+
+
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+
+
+    <link href="css/styles.css" rel="stylesheet">
+
+    <link href="css/hover.css" rel="stylesheet" media="all">
+
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+
+
+
+    <script src="jquery.js" type="text/javascript"></script> <script src="jquery.lazyload.js" type="text/javascript"></script>
+
+
+  </head>
+
+  <body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+
+</script>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-faded fixed-top">
+      <div class="container" style ="margin-left: 30px; margin-right: 0px;">
+        <!--<a class="navbar-brand" href="#" >LOGO</a>-->
+        
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto" style = "font-family: 'Zilla Slab', serif; font-size:18px;">
+            
+            <li class="nav-item" style ="margin-left: 10pt;margin-right: 25pt;" >
+              <a class="nav-link" href="index.html" style ="margin-top:0; padding-top:0; margin-left: 10pt;margin-right: 25pt; "><a href="index.html" class="hvr-underline-from-left">Projects</a></a>
+            </li>
+
+            <li class="nav-item" style ="margin-left: 10pt;margin-right: 25pt;" >
+              <a class="nav-link" href="about.html" style ="margin-top:0; padding-top:0; margin-left: 10pt;margin-right: 25pt; "><a href="about.html" class="hvr-underline-from-left">About me</a></a>
+            </li>
+
+            <li class="nav-item" style="margin-left: 10pt;margin-right: 25pt;">
+              <a class="nav-link" href="illustrations.html" style ="margin-top:0; padding-top:0;  margin-left: 10pt;margin-right: 25pt;"><a href="illustrations.html" class="hvr-underline-from-left">Illustrations</a></a>
+            </li>
+
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Page Content -->
+    <div class="container-fluid">
+        <div class = "onesection" >
+          <div class="style fade-in">
+          
+            <div class="col-lg-6">
+              <p><br></p>
+              <p><br></p>
+              <p><br></p>
+              <h1 class="mt-5">Github’s Issue tracking</h1>
+              <h2>Redesign Github’s issue tracking experiences</h2>
+              
+              <p class="lead">A design exercise to help developers create more structured issues, and keep track of issues that really matter to them and to the project.</p>
+              
+            </div>
+            
+           
+            <img src="img/1.28.png" class="img-fluid" alt="Responsive image" >
+           
+          </div>
+        </div>
+
+        <!-- Post Content -->
+
+
+        <article>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-md-10 mx-auto">
+                <p>Last week, I received a design exercise from Turi team and had about 5 days to work on it. The goal of this exercise is not to design a perfect solution or a perfect tool, because you can’t really tackle a complicated problem in just 5 days with the perfect result. It is to showcase design skills, thinking process, and how I make design decisions.</p>
+
+                <p>I will next cover what the challenge is, some background information. I will break it down piece by piece, walking you through research findings, problem solving process, and the final result.</p>
+                
+               
+
+                <h3 class="section-heading">The Challenge</h3>
+                <strong>Redesign Github’s Issue tracking experiences</strong><br>
+
+                <p>GitHub Issues can be problems, ideas, bugs need to be discussed or solved in a project on Github.</p>
+                <p>In the current version, users can see a list of issues already being created or create a new issue within a project. Sometimes, they need to read through the long list in order to find issues that matter. And sometimes, issues might be loosely defined that they need extra information to make actionable items.</p>
+                <p>Think about an issue’s life cycle. Design an experience to<br>1) help developers create more structured issues, and<br>2) keep track of issues that really matter to them and to the project.</p>
+
+                 <h3 class="section-heading">Background</h3>
+               
+
+                <p>When I first saw this question, I was actually very confused with the term GitHub Issue and couldn’t comprehend the design goal. It is because, even though I have used GitHub before, GitHub Issue is a way for developers to keep track of tasks, enhancements, and bugs for their projects. Since I was lack of basic information of what a GitHub Issue is, who use Issue, and why do people use it, I started researching on the background information of GitHub Issue.</p>
+                <p>So, what is an issue?</p>
+
+
+                <img src="img/gh/01.png" class="img-fluid" alt="Responsive image" >
+                <div class="footnote">Screenshot of an Issue List on GitHub</div>
+
+                <img src="img/gh/02.png" class="img-fluid" alt="Responsive image" >
+                <div class="footnote">Issue list</div>
+
+                <img src="img/gh/03.png" class="img-fluid" alt="Responsive image" >
+                <div class="footnote">Clarification of the details of this Issue</div>
+
+
+                <p>So, for this design exercise, these are the two problems we need to solve. 1) How might we create structured Issues so that developers can make actionable items? 2) How might we keep track of Issues?</p>
+                <p>Do we have any question at this point? About the background information, about the design exercise?</p>
+
+                <img src="img/gh/05.png" class="img-fluid" alt="Responsive image" >
+                <div class="footnote">User Research Methods</div>
+
+                <h3 class="section-heading">Research Goals</h3>
+              
+                <strong>1. What is a structured issue constitutes of?</strong><br>
+                <p>I took sometime and read over some popular repository on GitHub, such as Angular JS, Typescript, and of course Turicreate. Based on the conversation about clarifying what the issue really is, I found that developers need these information in an Issue in order to make actionable items:</p>
+
+                <img src="img/gh/06.png" class="img-fluid" alt="Responsive image" >
+                <div class="footnote">Survey Result</div>
+                <br><br>
+                <img src="img/gh/07.png" class="img-fluid" alt="Responsive image" >
+                <div class="footnote">Online research of what an ideal Issue is constituted of</div>
+                <br><br>
+                <ul>
+                  <li> Basic critical information to all issues: Bug or Feature request, Environment, Current status, Expected Status.</li>
+                  <li>Detailed description and explanation of what the Issue is.</li>
+                </ul>
+                <br><br>
+                <strong>2. Why do people loose track of their GitHub Issues? What are the user behaviors?</strong><br>
+                <p>On GitHub, there is only two status of an Issue. It is either open or closed. However, what does an Issue actually go through?</p>
+
+                <img src="img/gh/08.png" class="img-fluid" alt="Responsive image" >
+                <div class="footnote">Issue Life Cycle</div>
+
+                <br>
+
+                <h3 class="section-heading">Constraints, Scope and Assumptions</h3>
+
+                <p>Because it is a design exercise with limited time and resources, I set up some rules and constraints to help me scope down and focus on the design goal.</p>
+                <p>1. I have seen that different team dynamic interact with GitHub Issue differently. I am targeting industry/working environment of team structure today. Use case will be limited for this scope. Team structure is 1 Technology Lead managing about 8 developers.</p>
+                <p>2. Our two goals, one is to create structured issue so developers can make actionable items. Another is to keep track of Issues. I set the success measurement for goal 1, creating structured issues, is seeing less back and forth conversation showing up about what is the current state, what is the project version, and how to reproduce the bug. For keeping track of issues, I decided that the measurement is to see people working more effectively, which is monitoring the data of Issue’s closing rate.</p>
+                <p>3. I have found other pain points of issue, for example, multiple things to do under one Issue, and duplication of Issue. However, they are not in scope of our two main goals of design. I decided not to focus on them at this time. </p>
+                
+                <p>Note: It is not saying they are not important. I will discuss them in next step section.<p>
+
+                <h3 class="section-heading">Persona</h3>
+                <p>At this point, we can see that there is two distinct roles, Technology Lead/Project Owner who priortize the Issues and assign the Issues to the developers he or she managers, and developers on team taking/being assigned Issues to work on. I developed these two personas based on their goals and traits.</p>
+
+
+                <img src="img/gh/09.png" class="img-fluid" alt="Responsive image" >
+                <div class="footnote">Persona of a Technology Lead or Project Owner</div>
+
+                <br><br>
+                <p>What does a Tech Lead do to Issues?</p>
+                </div>
+            </div>
+          </div>
+          </article>
+        <article>
+            <div >
+                <img src = "img/gh/10.png" alt="History placement illustration" width="100%">
+            </div>
+        </article>
+        <article>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-md-10 mx-auto">
+          
+                <div class="footnote">Journey of an Issue from a Tech Lead’s perspective</div>
+
+                <br><br>
+                <img src="img/gh/11.png" class="img-fluid" alt="Responsive image" >
+                <div class="footnote">Persona of a developer on team</div>
+
+                <br><br>
+                <p>What does a developer do to Issues?</p>
+                </div>
+            </div>
+          </div>
+          </article>
+        <article>
+            <div >
+                <img src = "img/gh/12.png" alt="History placement illustration" width="100%">
+            </div>
+        </article>
+        <article>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-md-10 mx-auto">
+                <div class="footnote">Journey of an Issue from a Tech Lead’s perspective</div>
+                <br><br>
+                
+                <h3 class="section-heading">Brainstorming Ideas</h3>
+                  <p>How might we create structured issue? How might we keep track of issue?</p>
+
+                <img src="img/gh/15.JPG" class="img-fluid" alt="Responsive image" >
+                <div class="footnote">Some of the sticker notes made during brainstorming sessions</div>
+
+                <p>I set myself several rounds of brainstorming, each round about 10 to 20 minutes, around how might we create structured issue and how might we keep track of issue. </p>
+                <p>After a few iterations, I decided to move forward with idea of Issue Template for filling Issue and categorization of Issue List.</p>
+                <p>I was hesitating between the ideas of Issue Dash Board and Issue Categorization. I moved forward with the Idea of Issue Categorization because dashboard provides less information on the first sight, and in situation of many opened Issues, dashboard does not provide enough space.</p>
+
+
+                
+
+                </div>
+            </div>
+          </div>
+          </article>
+        <article>
+            <div >
+                <img src = "img/gh/16.png" alt="History placement illustration" width="100%">
+            </div>
+        </article>
+        <article>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-md-10 mx-auto">
+                <div class="footnote">Issue Template</div>
+                <br><br>
+
+               
+                <img src="img/gh/17.png" class="img-fluid" alt="Responsive image" >
+                <div class="footnote">Main Page Of Issue List</div>
+                <br><br>
+
+                <img src="img/gh/18.png" class="img-fluid" alt="Responsive image" >
+                <div class="footnote">My Issue List</div>
+
+
+                 </div>
+            </div>
+          </div>
+          </article>
+        <article>
+            <div >
+                <img src = "img/gh/19.png" alt="History placement illustration" width="100%">
+            </div>
+        </article>
+        <article>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-md-10 mx-auto">
+                <div class="footnote">Workflow of GitHub Issues, main page to personal page and to Issue Template</div>
+                <br><br>
+
+              
+                  
+               
+
+                
+
+                 </div>
+
+
+            </div>
+          </div>
+        </article>
+     
+    
+        <article>
+
+
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+              
+               <img src="img/gh/20.png" class="img-fluid" alt="Responsive image" >
+               
+              </div>
+
+              <div class="col-lg-4 mx-auto">
+                <br><br>
+
+                <p>Issues are now categorized based on their status. It is easier to be tracked for both the Technology Lead and the Developers and shows what Issues matter to the project</p>
+             
+               
+              </div>
+
+            </div>
+
+          </div>
+
+        </article>
+         <article>
+
+
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+              
+               
+               <img src="img/gh/21.png" class="img-fluid" alt="Responsive image" >
+          
+               
+              </div>
+
+              <div class="col-lg-4 mx-auto">
+               <br><br>
+                <p>My Issue Page provides Issues that “I am working on” and “My In Review”. It brings what really matters to the developers immediately.</p>
+
+               
+              </div>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+       
+
+
+
+
+        <article>
+
+
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+              
+              
+               <img src="img/gh/22.png" class="img-fluid" alt="Responsive image" >
+               
+              </div>
+
+              <div class="col-lg-4 mx-auto">
+               <br><br>
+                <p>The Issue Template provides all the critical information needed for developers to make actionable items, and it is also customizable since different project might need different Issue information.</p>
+               
+              </div>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+
+         <article>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-md-10 mx-auto">
+               
+               
+               
+
+
+
+                <h3 class="section-heading">Next Steps</h3>
+                <p>Spend more time on research and go beyond of work environment. Targeted size, no longer just 10, but more collaborators. For example, in open sourced team project that doesn’t have a tech lead/project owner. Understand their issue life cycle, and whether they use label while categorizing issues or not, and why.</p>
+
+                <p>Tackling problems such as breaking up an issue, decrease duplication.</p>
+                <p>If really an actual project in a company, discuss details with pm and other teammates about who are target users really are, and identifying competitors such as Jira and other bug trackers on the market. Tackle the problem whether they are success or not, and why.</p>
+                <p>See measurements. If we still see measurement of this design solution does not work out, we could go over the process and further understand the root of the problem, because design failure is not a failure. Now you know this route doesn’t work, and we are always prepared to brainstorm more solutions and have plans to test them out.</p>
+            
+
+                <br><br>
+                
+
+                </div>
+            </div>
+          </div>
+          </article>
+       
+
+
+
+
+      </div>
+
+
+    <footer class="footer">
+      <div id="effects" class="effects">
+         <div class="row">
+            <div class="col-lg-6" style = "padding-left:0;padding-right:0;">
+              <a href="http://www.meredithxie.me/" class="hvr-sweep-to-left"><p class="footer-hoppr-backward"style = "margin:0; ">Going back to</p>
+               <p class="footer-hoppr-title"style = "margin:0;">Home Page</p>
+             </a>
+            </div>
+            <div class="col-lg-6" style = "padding-left:0;padding-right:0;">
+              <a href="ml.html" class="hvr-sweep-to-right"><p class="footer-hoppr-onward"style = "margin:0;">to the next project</p>
+              <p class="footer-hoppr-title"style = "margin:0;">
+                ML Subject Line Tool</p></a>
+            </div>
+        </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+    <!-- Bootstrap core JavaScript -->
+
+
+
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery/jquery.easing.min.js"></script>
+    <script src="vendor/jquery/scrollreveal.min.js"></script>
+    <script src="vendor/jquery/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>
